@@ -1,0 +1,47 @@
+# Header
+menu:
+  主页: .
+  归档: archives
+  分类: categories
+  标签: tags
+  关于: about
+
+# Content
+excerpt_link: 阅读更多
+fancybox: true
+
+# Profile
+profile: true # whether to show profile bar
+gravatar: false # whether to use gravatar with the email
+showlogo: true # whether to show the logo in the header
+
+# Sidebar
+sidebar: right # set to false if you don't want a sidebar
+widgets:
+- recent_posts
+- category
+- tag
+- tagcloud
+- archive
+#thumbnail: true
+
+# Contacts
+contacts:
+  github: http://github.com/yutiya
+#  twitter: '#'
+#  facebook: '#'
+#  dribbble: '#'
+  weibo: http://weibo.com/u/2817813403
+  rss: atom.xml
+
+# Links
+links:
+  Hexo: http://hexo.io
+
+# Miscellaneous
+google_analytics:
+favicon: favicon.ico
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
