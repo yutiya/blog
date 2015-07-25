@@ -1,7 +1,10 @@
 title: 迈向世界的第一步
-category: Hexo
+date: 2015-07-23 16:00:00
+categories: Hexo
 tags: 第一次使用Hexo
 ---
+
+# 迈向世界的第一步
 
  使用[Hexo](http://hexo.io/)! 非常棒. 
  查看 [documentation](http://hexo.io/docs/) 获取更多信息.
@@ -18,7 +21,7 @@ tags: 第一次使用Hexo
 
 <!-- more -->
 
-### 新的篇章
+## 新的篇章
 
 ``` bash
     $ hexo new "新的开始"
