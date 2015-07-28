@@ -1,6 +1,6 @@
 title: 迈向世界的第一步
 date: 2015-07-23 16:00:00
-categories: Hexo
+categories: [Hexo, Use]
 tags: 第一次使用Hexo
 ---
 
@@ -34,3 +34,21 @@ tags: 第一次使用Hexo
 ```
 
 更多: [Deployment](http://hexo.io/docs/deployment.html)
+
+### 文章配置
+
+| title: 标题
+| date: 日期
+| categories: 分类
+``` bash
+    可以输入多个，顺序性 
+    ` categories: [Hexo, Use] `
+    或者
+    `
+    categories:
+        - Hexo
+        - Use
+    `
+```
+| tags: 标记
+
