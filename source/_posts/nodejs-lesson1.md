@@ -47,4 +47,4 @@ ftp:
 `ftp://账号:密码@主机/目录或文件`   
 
 现在的使用的url精简成了这样:
-<scheme>://<host>:<port>/<url-path>
+`<scheme>://<host>:<port>/<url-path>`
