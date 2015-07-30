@@ -35,6 +35,8 @@ For Example:
 
 然而并没有什么卵用,好,我换了一个方法   
 
+<!-- more -->
+
 ``` code
     NSString *str = @"username=yutiya&lock=abc+bbc+ccc";
     NSLog(@"%@", [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);
