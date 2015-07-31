@@ -1,7 +1,9 @@
 title: icarus主题的使用
 date: 2015-07-23 16:07:53
-categories: Hexo
-tags: icarus主题使用
+categories: 
+- Hexo
+- icarus
+tags: Hexo
 ---
 
 ## icarus主题的使用

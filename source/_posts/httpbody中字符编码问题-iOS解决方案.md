@@ -2,7 +2,8 @@ title: httpbody中字符编码问题-iOS解决方案
 date: 2015-07-30 14:35:00
 categories:
 - iOS
-tags: httpbody字符编码
+- URLencode
+tags: URLencode
 ---
 
 ## httpbody中字符编码问题

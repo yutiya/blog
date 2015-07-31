@@ -1,7 +1,7 @@
 title: hadoop安装
 date: 2015-07-25 21:54:30
 categories: Hadoop
-tags: hadoop安装
+tags: hadoop
 ---
 
 # hadoop安装(CentOS 6.5)

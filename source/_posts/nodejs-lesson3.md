@@ -2,8 +2,8 @@ title: nodejs lesson3
 date: 2015-07-29 18:42:22
 categories:
 - nodejs
-- express
-tags: express
+- [express, superagent, cheerio]
+tags: nodejs
 ---
 
 ## 使用superagent和cheerio完成简单爬虫

@@ -2,8 +2,8 @@ title: nodejs lesson2
 date: 2015-07-29 18:42:22
 categories:
 - nodejs
-- express
-tags: express
+- [express, utility]
+tags: nodejs
 ---
 
 ## 使用外部模块

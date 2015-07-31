@@ -7,8 +7,10 @@ tags: Javascript
 
 ##  Javascript语法中的一些小陷阱
 
+### Javascript对象,其实也就是使用哈希表实现
+
 原来这样写创建出来的obj是一个对象   
-在javascript中没有map噢(也就是在别的语言中常常使用的键值对)   
+在Javascript中没有map噢(也就是在别的语言中常常使用的键值对)   
 
 ``` code
 var obj = {
@@ -36,7 +38,10 @@ var obj = {
 
 <!-- more -->
 
-下面来一段标准的JSON字符串   
+
+### Javascript对象是不是和JSON很像
+
+下面来一段标准的JSON字符串,楼主也是傻逼了,才想通的,呵呵
 eval() 函数使用的是 JavaScript 编译器,可解析 JSON 文本   
 然后生成 JavaScript 对象.必须把文本包围在括号中,这样才能避免语法错误:   
 
@@ -56,7 +61,7 @@ JSON 解析器只能识别 JSON 文本,而不会编译脚本。
 [较新的浏览器和最新的 ECMAScript (JavaScript) 标准中均包含了原生的对 JSON 的支持。](http://www.w3school.com.cn/json/json_eval.asp)   
 
 附上一些可用的代码,如果一些古老的浏览器,可以下载json2.js   
-作者没用过,自己上百度谷歌一下   
+作者没用过,自己上百度谷歌一下,我只给[github地址](https://github.com/douglascrockford/JSON-js)   
 
 ``` text
 JSON.stringify() // 将Javascript对象转换成json格式的字符串

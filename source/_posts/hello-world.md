@@ -1,7 +1,7 @@
 title: 迈向世界的第一步
 date: 2015-07-23 16:00:00
 categories: Hexo
-tags: 第一次使用Hexo
+tags: Hexo
 ---
 
 # 迈向世界的第一步
