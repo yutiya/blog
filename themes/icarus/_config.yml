@@ -18,7 +18,7 @@ showlogo: true # whether to show the logo in the header
 # Sidebar
 sidebar: right # set to false if you don't want a sidebar
 widgets:
-- recent_posts
+# - recent_posts
 - category
 - tag
 - tagcloud
