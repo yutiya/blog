@@ -14,9 +14,6 @@
           </div>
         </nav>
       <% } %>
-      <div id="search-form-wrap">
-        <%- search_form({button: ' '}) %>
-      </div>
     </div>
   </div>
   <div id="main-nav-mobile" class="header-sub header-inner">
@@ -25,9 +22,6 @@
         <% for (var i in theme.menu){ %>
           <td><a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a></td>
         <% } %>
-        <td>
-          <%- search_form() %>
-        </td>
       </tr>
     </table>
   </div>
