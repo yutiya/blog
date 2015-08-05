@@ -120,14 +120,62 @@ tags: lesson
 有图有真相:   
 ![](/images/nodejs/lesson5/2.png)
 
+作为补充,完成了我们的目标   
+代码如下:   
 
+``` code
+    //  加载模块
+    var async = require('async');
+    var superagent = require('superagent');
+    var cheerio = require('cheerio');
+    var url = require('url');
+    //  主站链接
+    var cnodeUrl = 'https://cnodejs.org/';
+    //  当前连接数
+    var connectCurrentCount = 0;
+    //  处理
+    var getComment = function(topicUrl, callback) {
+        connectCurrentCount++;
+        console.log('现在的并发数是', connectCurrentCount, '，正在抓取的是', topicUrl);
+        superagent.get(topicUrl)
+            .end(function (err, sres) {
+                connectCurrentCount--;
+                if(err) {
+                    getCommont(topicUrl, callback);
+                    return;
+                }
+                var $ = cheerio.load(sres.text);
+                callback(null, {
+                    title: $('.topic_full_title').text().trim(),
+                    href: topicUrl,
+                    comment: $('.reply_content').eq(0).text().trim()
+                });
+            });
+    };
+    //  访问
+    superagent.get(cnodeUrl)
+        .end(function(err, res) {
+            if(err) {
+                console.log(err);
+                return;
+            }
+            var $ = cheerio.load(res.text);
+            var urls = [];
+            $('#topic_list .topic_title').each(function(idx, element){
+                var $element = $(element);
+                urls.push(url.resolve(cnodeUrl, $element.attr('href')));
+            });
+            console.log(urls);  // 得到40个主题的url
+            //  开启并发访问
+            async.mapLimit(urls, 5, function(topicUrl, callback){
+                getComment(topicUrl, callback);
+            }, function(err, result){
+                console.log('final->');
+                console.log(result);    // 40次返回结果汇总为数组
+            });
+        });
+```
 
-
-
-
-
-
-
-
-
+有图有真相:   
+![](/images/nodejs/lesson5/3.png)
 
