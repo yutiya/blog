@@ -1,7 +1,8 @@
 title: C语言变态的HelloWorld
 date: 2015-08-06 10:30:24
 categories:
-- c
+- C
+- HelloWorld
 tags: HelloWorld
 ---
 
