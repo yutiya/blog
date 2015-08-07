@@ -72,7 +72,7 @@ For example:
 ```
 
 赋值报错:    
-![](/images/shell/course/1.png)
+![](/images/shell/course1/1.png)
 
 - 删除变量`unset myUrl`
 
@@ -111,7 +111,7 @@ For example:
     echo "Total Number of Parameter: $#"
 ```
 
-![](/images/shell/course/2.png)
+![](/images/shell/course1/2.png)
 
 - $*和$@的区别:    
 
@@ -149,7 +149,8 @@ For example:
     done
 ```
 
-![](/images/shell/course/3.png)
+![](/images/shell/course1/3.png)
+
 可以看出来,使用变量的时候如果采用双引号""形式,$@会自动换行
 
 ` $ echo "上一次命令的退出状态" $?`,一般情况下成功为0,失败为1.也可以表示函数返回值
@@ -193,19 +194,19 @@ For example:
     echo "Uptime is $UP"
 ```
 
-![](/images/shell/course/4.png)
+![](/images/shell/course1/4.png)
 
 - 变量替换:    
 
 形式 | 说明
 --- | ---
-`${var}` | 变量本来的值
-`${var:-word}` | 如果变量var为空或已被删除,那么返回word,但不改变var的值
-`${var:=word}` | 如果变量var为空或已被删除,那么返回word,并将改变var的值
-`${var:?message}` | 如果变量var为空或已被删除,那么将消息messgae送到标准错误输出,可以用来检测变量var是否可以被正常赋值,若此替换出现在Shell脚本中,那么脚本将停止运行
-`${var:+word}` | 如果变量var被定义,那么返回word,但不改变var的值
+${var}` | 变量本来的值
+${var:-word} | 如果变量var为空或已被删除,那么返回word,但不改变var的值
+${var:=word} | 如果变量var为空或已被删除,那么返回word,并将改变var的值
+${var:?message} | 如果变量var为空或已被删除,那么将消息messgae送到标准错误输出,可以用来检测变量var是否可以被正常赋值,若此替换出现在Shell脚本中,那么脚本将停止运行
+${var:+word} | 如果变量var被定义,那么返回word,但不改变var的值
 
-![](images/sheel/course/5.png)
+![](images/sheel/course1/5.png)
 
 ### Shell运算
 
@@ -256,18 +257,18 @@ For example:
     fi
 ```
 
-![](/images/shell/course/6.png)
+![](/images/shell/course1/6.png)
 
 运算符 | 说明
 --- | ---
-`+` | 加法
-`-` | 减法
-`*` | 乘法
-`/` | 除法
-`%` | 取余
-`=` | 赋值
-`==` | 相等.用于比较两个数字，相同则返回true
-`!=` | 不相等.用于比较两个数字,不相同则返回true
++ | 加法
+- | 减法
+* | 乘法
+/ | 除法
+% | 取余
+= | 赋值
+== | 相等.用于比较两个数字，相同则返回true
+!= | 不相等.用于比较两个数字,不相同则返回true
 
 - 关系运算(只支持数字,不支持字符串,除非字符串的值是数字):    
 
@@ -319,16 +320,16 @@ For example:
     fi
 ```
 
-![](/images/shell/course/7.png)
+![](/images/shell/course1/7.png)
 
 运算符 | 说明
 --- | ---
-`-eq` | 检测两个数是否相等,相等返回true
-`-ne` | 检测两个数是否相等,不相等返回true
-`-gt` | 检测左边的数是否大于右边的,如果是,则返回true
-`-lt` | 检测左边的数是否小于右边的,如果是,则返回true
-`-ge` | 检测左边的数是否大于等于右边的,如果是,则返回true
-`-le` | 检测左边的数是否小于等于右边的,如果是,则返回true
+-eq | 检测两个数是否相等,相等返回true
+-ne | 检测两个数是否相等,不相等返回true
+-gt | 检测左边的数是否大于右边的,如果是,则返回true
+-lt | 检测左边的数是否小于右边的,如果是,则返回true
+-ge | 检测左边的数是否大于等于右边的,如果是,则返回true
+-le | 检测左边的数是否小于等于右边的,如果是,则返回true
 
 - 布尔运算符:    
 
@@ -369,9 +370,9 @@ For example:
 
 运算符 | 说明
 --- | ---
-`!` | 非运算,表达式为true则返回false,否则返回true
-`-o` | 或运算,有一个表达式为true则返回true
-`-a` | 与运算,两个表达式都为true才返回true
+! | 非运算,表达式为true则返回false,否则返回true
+-o | 或运算,有一个表达式为true则返回true
+-a | 与运算,两个表达式都为true才返回true
 
 - 字符串运算符:    
 
@@ -417,15 +418,15 @@ For example:
     fi
 ```
 
-![](/images/shell/course/8.png)
+![](/images/shell/course1/8.png)
 
 运算符 | 说明
 --- | ---
-`=` | 检测两个字符串是否相等,相等返回true
-`!=` | 检测两个字符串是否相等,不相等返回true
-`-z` | 检测字符串长度是否为0,为0返回true
-`-n` | 检测字符串长度是否为0,不为0返回true
-`str` | 检测字符串是否为空,不为空返回true(直接判断变量)
+= | 检测两个字符串是否相等,相等返回true
+!= | 检测两个字符串是否相等,不相等返回true
+-z | 检测字符串长度是否为0,为0返回true
+-n | 检测字符串长度是否为0,不为0返回true
+str | 检测字符串是否为空,不为空返回true(直接判断变量)
 
 - 文件测试运算符:    
 检测unix文件的各种属性
@@ -485,23 +486,23 @@ For example:
     fi
 ```
 
-![](/images/shell/course/9.png)
+![](/images/shell/course1/9.png)
 
 操作符 | 说明
 --- | ---
-`-b file` | 检测文件是否是块设备文件,如果是,则返回true
-`-c file` | 检测文件是否是字符设备文件,如果是,则返回true
-`-d file` | 检测文件是否是目录,如果是,则返回true
-`-f file` | 检测文件是否是普通文件(既不是目录,也不是设备文件),如果是,则返回true
-`-g file` | 检测文件是否设置了SGID位,如果是,则返回true
-`-k file` | 检测文件是否设置了粘着位(Sticky Bit),如果是,则返回true
-`-p file` | 检测文件是否是具名管道,如果是,则返回true
-`-u file` | 检测文件是否设置了SUID位,如果是,则返回true
-`-r file` | 检测文件是否可读,如果是,则返回true
-`-w file` | 检测文件是否可写,如果是,则返回true
-`-x file` | 检测文件是否可执行,如果是,则返回true
-`-s file` | 检测文件是否为空(文件大小是否为0),不为空返回true
-`-e file` | 检测文件(包括目录)是否存在,如果是,则返回true
+-b file | 检测文件是否是块设备文件,如果是,则返回true
+-c file | 检测文件是否是字符设备文件,如果是,则返回true
+-d file | 检测文件是否是目录,如果是,则返回true
+-f file | 检测文件是否是普通文件(既不是目录,也不是设备文件),如果是,则返回true
+-g file | 检测文件是否设置了SGID位,如果是,则返回true
+-k file | 检测文件是否设置了粘着位(Sticky Bit),如果是,则返回true
+-p file | 检测文件是否是具名管道,如果是,则返回true
+-u file | 检测文件是否设置了SUID位,如果是,则返回true
+-r file | 检测文件是否可读,如果是,则返回true
+-w file | 检测文件是否可写,如果是,则返回true
+-x file | 检测文件是否可执行,如果是,则返回true
+-s file | 检测文件是否为空(文件大小是否为0),不为空返回true
+-e file | 检测文件(包括目录)是否存在,如果是,则返回true
 
 ### Shell字符串
 
