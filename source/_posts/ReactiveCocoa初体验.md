@@ -1,6 +1,6 @@
 title: ReactiveCocoa初体验
 date: 2015-08-12 15:48:14
-tags:
+categories:
 - iOS
 - ReactiveCocoa
 tags: ReactiveCocoa
