@@ -1,6 +1,6 @@
 title: 关于iOS屏幕方向让你找到存在感
 date: 2015-08-19 12:18:50
-categroies:
+categories:
 - iOS
 - orientation
 tags:
