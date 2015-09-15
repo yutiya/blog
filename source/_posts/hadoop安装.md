@@ -1,6 +1,8 @@
 title: hadoop安装
 date: 2015-07-25 21:54:30
-categories: Hadoop
+categories: 
+- java
+- Hadoop
 tags: hadoop
 ---
 
@@ -136,6 +138,7 @@ $ service network restart
 ```
 
 * 关闭selinux防火墙:
+
 ```
 // 关闭selinux:   
 $ sudo vi /etc/selinux/config  
@@ -145,15 +148,36 @@ $ sudo vi /etc/selinux/config
 ```
 
 * 无法使用hadoop进行无密码登陆的时候，可以修改权限再试
+
 ```
 $ chmod  600 ～/.ssh/authorized_keys
 $ chmod 700 ~/.ssh
 ```
 
 * 启动hadoop运行未知主机错误
+
 ```
 $ vi /etc/hosts
     `
         127.0.0.1 localhost 主机名 // 将自己的主机ip解析为127.0.0.1
     `
+```
+
+* 卸载OpenJDK
+
+```
+    先查看 rpm -qa | grep java
+
+    显示如下信息:
+
+    java-1.4.2-gcj-compat-1.4.2.0-40jpp.115
+    java-1.6.0-openjdk-1.6.0.0-1.7.b09.el5
+    
+    //卸载
+    rpm -e --nodeps java-1.4.2-gcj-compat-1.4.2.0-40jpp.115
+    rpm -e --nodeps java-1.6.0-openjdk-1.6.0.0-1.7.b09.el5
+
+    //如果上面的行不通,就用yum来卸载吧,搞湿对吧
+    yum -y remove java java-1.4.2-gcj-compat-1.4.2.0-40jpp.115
+    yum -y remove java java-1.6.0-openjdk-1.6.0.0-1.7.b09.el5
 ```

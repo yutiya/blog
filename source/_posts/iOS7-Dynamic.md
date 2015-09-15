@@ -24,7 +24,7 @@ UIDynamic是iOS7引入的UIKit动力学,目的是将2D物理引擎引入UIKit.
 
 <!-- more -->
 
-写断代码演示下:    
+写段代码演示下:    
 
 ``` code
     @interface ViewController ()
