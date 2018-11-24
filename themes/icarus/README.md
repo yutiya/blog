@@ -1,203 +1,137 @@
-#Icarus
+<p align="center" class="has-mb-6">
+<img class="not-gallery-item" height="48" src="http://ppoffice.github.io/hexo-theme-icarus/images/logo.svg">
+<br> A simple, delicate, and modern theme for the static site generator Hexo.
+<br>
+<a href="http://ppoffice.github.io/hexo-theme-icarus/">Preview</a> | 
+<a href="http://ppoffice.github.io/hexo-theme-icarus/categories/">Documentation</a> |
+<a href="https://github.com/ppoffice/hexo-theme-icarus/archive/master.zip">Download</a>
+<br>
+</p>
 
-### The blog theme you may fall in love with, coming to Hexo. [Preview](http://ppoffice.github.io/hexo-theme-icarus/)
-![](http://ppoffice.github.io/hexo-theme-icarus/gallery/preview.jpg "")
+![Icarus](http://ppoffice.github.io/hexo-theme-icarus/gallery/preview.png?1 "Icarus Preview")
 
-## Installation
+### :cd: Installation
 
-### Install
+Download & extract or `git clone` Icarus from GitHub to your blog's theme folder, and that's it!
 
-``` bash
-$ git clone https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus
+```shell
+git clone https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus
 ```
 
-**Icarus requires Hexo 3.0 and above.**
+Once started, Icarus will remind you of any missing dependencies and configuration files.
 
-### Enable
+### :gift: Features
 
-1. Rename `themes\icarus\_config.yml.example` to `themes\icarus\_config.yml`;
-2. Copy `themes\icarus\_config.yml.site.example` to your hexo blog's root directory and rename it to `_config.yml`;
-3. Then modify `theme` setting in `_config.yml` to `icarus`.
+**Extensive Plugin Support**
 
-### Update
+Icarus includes plentiful search, comment, sharing and other plugins out of the box. You can choose any of them to enrich your
+blog experience, or build your own plugin easily referring to the existing Icarus plugins.
 
-``` bash
-cd themes/icarus
-git pull
-```
+Comment plugins
 
-## Configuration
+- [Changyan](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Comment/changyan-comment-plugin/)
+- [Disqus](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Comment/disqus-comment-plugin/)
+- [Facebook](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Comment/facebook-comment-plugin/)
+- [Gitment](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Comment/gitment-comment-plugin/)
+- [Isso](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Comment/isso-comment-plugin/)
+- [LiveRe](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Comment/livere-comment-plugin/)
+- [Valine](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Comment/valine-comment-plugin/)
 
-### Theme configuration example
-```r
-# Header
+Search plugins
+
+- [Insight Search](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Search/insight-search-plugin/)
+- [Google Custom Search Engine](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Search/google-cse-plugin/)
+- [Baidu Site Search](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Search/baidu-search-plugin/)
+
+Share plugins
+
+- [AddThis](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Share/addthis-share-plugin/)
+- [AddToAny](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Share/addtoany-share-plugin/)
+- [Baidu Share](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Share/baidu-share-plugin/)
+- [Share.js](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Share/share-js-share-plugin/)
+- [ShareThis](http://ppoffice.github.io/hexo-theme-icarus/Plugins/Share/sharethis-share-plugin/)
+
+Other plugins
+
+- [Hexo Tag Plugin](http://ppoffice.github.io/hexo-theme-icarus/Configuration/Posts/hexo-built-in-tag-helpers/)
+- [lightGallery & Justified Gallery](http://ppoffice.github.io/hexo-theme-icarus/Plugins/General/gallery-plugin/)
+- [MathJax](http://ppoffice.github.io/hexo-theme-icarus/Plugins/General/mathjax-plugin/)
+- [Site Analytics](http://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/)
+
+**Rich Code Highlight Theme Choices**
+
+Icarus directly import code highlight themes from the [highlight.js](https://highlightjs.org/) package, and makes more than 
+70 highlight themes available to you.
+
+<table>
+    <tr>
+        <td><img src="http://ppoffice.github.io/hexo-theme-icarus/gallery/code-highlight/atom-one-light.png"></td>
+        <td><img src="http://ppoffice.github.io/hexo-theme-icarus/gallery/code-highlight/monokai.png"></td>
+        <td><img src="http://ppoffice.github.io/hexo-theme-icarus/gallery/code-highlight/androidstudio.png"></td>
+    </tr>
+</table>
+
+**Elastic Theme Configuration**
+
+In addition to the minimalistic and easy-to-understand configuration design, Icarus allows you to set configurations on a 
+per-page basis with the ability to merge and override partial configurations.
+
+<div>
+<table>
+    <tr>
+        <th>_config.yml</th>
+        <th>post.md</th>
+    </tr>
+    <tr>
+        <td>
+            <pre>menu:
+    Archives: /archives
+    Categories: /categories
+    Tags: /tags
+    About: /about</pre>
+        </td>
+        <td>
+            <pre>title: A Simple Post
 menu:
-  Home: .
-  Archives: archives
-  Categories: categories # you need to add extra page to enable this, please see the config below.
-  Tags: tags             # you need to add extra page to enable this, please see the config below.
-  About: about
+    Go Home: /index.html
+---
+# Here is some simple markdown.</pre>
+        </td>
+    </tr>
+    <tr>
+        <td><img height="40" src="http://ppoffice.github.io/hexo-theme-icarus/gallery/navbar/main-config.png"></td>
+        <td><img height="40" src="http://ppoffice.github.io/hexo-theme-icarus/gallery/navbar/post-config.png"></td>
+    </tr>
+</table>
+</div>
 
-# Content
-excerpt_link: Read More
-fancybox: true
+**Responsive Layout**
 
-# Sidebar
-sidebar: right
-widgets:
-- recent_posts
-- category
-- tag
-- tagcloud
-- archive
-thumbnail: true
+No matter what modern browsering device your audiences are using, they can always get the best experience because Icarus's responsive
+layout across multiple viewpoints.
 
-# Contacts
-contacts:
-  github: http://github.com/ppoffice/hexo-theme-icarus
-  twitter: '#'
-  facebook: '#'
-  dribbble: '#'
-  rss: atom.xml
+![Responsive Layout](http://ppoffice.github.io/hexo-theme-icarus/gallery/responsive.png)
 
-# Links
-links:
-  Hexo: http://hexo.io
+### :hammer: Development
 
-# Miscellaneous
-google_analytics:
-favicon: favicon.png
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:
-```
+This project is built with
 
-- **excerpt_link** - Cooperate with `<!-- more -->` tag to show only part of the article in index pages.
-- **fancybox** - Enable [Fancybox].
-- **contacts** - Your social network links, RSS link, etc.
-- **widgets** - Widgets displaying in sidebar.
-- **thumbnail** - Whether to show post thumbnails in the sidebar and archive pages.
-- **links** - Links displayed in the link widget.
-- **google_analytics** - Google Analytics ID.
-- **favicon** - Favicon path.
+- Hexo 3.7.1
+- Ejs
+- Stylus
+- Bulma 0.7.2
 
-### Site configuration example
-```r
-# Site
-title: Icarus
-subtitle:
-description: Hexo theme - Icarus
-author: PPOffice
-author_title: 'Web Developer & Designer'
-avatar: css/images/avatar.png
-location: 'Harbin, China'
-language: en
-timezone:
+Please refer to the documentation for Icarus implementation details.
 
-...
+### :tada: Contribute
 
-# Disqus
-disqus_shortname:
-```
+If you feel like to help us build a better Icarus, you can
 
-- **author** - Your name.
-- **author_title** - Title to your occupation.
-- **avatar** - Your avatar image link.
-- **location** - Where you live in.
-- **disqus_shortname** - Your Disqus shortname.
+:electric_plug: Write a plugin |
+:black_nib: <a href="https://github.com/ppoffice/hexo-theme-icarus/new/site/source/_posts">Submit a tutorial</a> |
+:triangular_flag_on_post: <a href="https://github.com/ppoffice/hexo-theme-icarus/issues/new">Report a bug</a> |
+:earth_asia: <a href="https://github.com/ppoffice/hexo-theme-icarus/tree/master/languages">Add a translation</a>
 
-### Post Thumbnail & Banner
+### :memo: License
 
-You can add a thumbnail and a banner to each post by adding the following lines into your post source files' front-matter:
-```r
-title: Demo
-date: 2015-01-01
-...
-# add those
-thumbnail: http://example.com/thumbnail.jpg
-banner: http://example.com/banner.jpg
-```
-
-### Custom Categories & Tags Pages
-
-To enable custom categories page and tags page, just copy the `categories` folder and `tags` folder under your theme's `_source` foler into your site's `source` folder. Then edit theme's _config.yml and add the following lines: 
-```r
-# Header
-menu:
-  ...
-  Categories: categories # -> add this line
-  Tags: tags # -> and add this line
-  ...
-```
-
-### Languages
-
-English and Simplified Chinese are the default languages of the theme. You can add translations in the `languages` folder and change the default language in blog's `_config.yml`.
-
-```r
-language: zh-CN
-```
-
-## Features
-
-### Profile Sidebar
-
-A nice place to show yourself. You can add your own information in your site's `_config.yml`
-
-![](http://ppoffice.github.io/hexo-theme-icarus/gallery/profile.png "")
-
-### Post Banner & Thumbnail
-
-Thanks to [atika](https://github.com/atika), you can now add thumbnails and banners to every post to create better reading experience.
-
-### Responsive Layout
-
-Icarus knows on what screen size you are browsering the website, and reorganize the layout to fit your device.
-
-![](http://ppoffice.github.io/hexo-theme-icarus/gallery/responsive.jpg "")
-
-### Custom Categories & Tags Pages
-
-Get your categories and tags listed in single pages to make your blog more methodic.
-
-### Fancybox
-
-Icarus uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
-
-```
-![img caption](img url)
-```
-
-### Sidebar
-
-Icarus provides 6 built-in widgets:
-
-- recent_posts
-- category
-- archives
-- tag
-- tagcloud
-- links
-
-All of them are enabled by default. You can edit them in `widget` setting.
-
-## Development
-
-### Requirements
-
-- [Grunt] 0.4+
-- Hexo 3.0+
-
-### Grunt tasks
-
-- **default** - Download [Fancybox] and [Font Awesome].
-- **fontawesome** - Only download [Font Awesome].
-- **fancybox** - Only download [Fancybox].
-- **clean** - Clean temporarily files and downloaded files.
-
-[Hexo]: http://zespia.tw/hexo/
-[Fancybox]: http://fancyapps.com/fancybox/
-[Font Awesome]: http://fontawesome.io/
-[Grunt]: http://gruntjs.com/
-
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ppoffice/hexo-theme-icarus/blob/master/LICENSE) file for details.

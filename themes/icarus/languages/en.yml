@@ -1,26 +1,39 @@
-index:
-  home: 'home'
-  search: 'Search'
-  archive: 'archive'
-  category: 'category'
-  uncategorized: 'uncategorized'
-  tag: 'tag'
-nav:
-  next: 'Next'
-  prev: 'Prev'
+common:
+    archive:
+        one: 'Archive'
+        other: 'Archives'
+    category:
+        one: 'Category'
+        other: 'Categories'
+    tag:
+        one: 'Tag'
+        other: 'Tags'
+    post:
+        one: 'Post'
+        other: 'Posts'
+    prev: 'Previous'
+    next: 'Next'
 widget:
-  recents: 'recents'
-  archives: 'archives'
-  categories: 'categories'
-  links: 'links'
-  tags: 'tags'
-  tag_cloud: 'tag cloud'
+    follow: 'Follow'
+    recents: 'Recent'
+    links: 'Links'
+    tag_cloud: 'Tag Cloud'
+    catalogue: 'Catalogue'
 article:
-  comments: 'Comments'
-  share: 'Share'
-profile:
-  follow: 'FOLLOW'
-  post: 'post'
-  tag: 'tag'
-  posts: 'posts'
-  tags: 'tags'
+    more: 'Read More'
+    comments: 'Comments'
+    read: 'read'
+    about: 'About'
+    words: 'words'
+plugin:
+    backtotop: 'Back to Top'
+search:
+    search: 'Search'
+    hint: 'Type something...'
+insight:
+    hint: 'Type something...'
+    posts: 'Posts'
+    pages: 'Pages'
+    categories: 'Categories'
+    tags: 'Tags'
+    untitled: '(Untitled)'

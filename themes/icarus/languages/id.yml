@@ -1,26 +1,37 @@
-index:
-  home: 'home'
-  search: 'Cari'
-  archive: 'arsip'
-  category: 'kategori'
-  uncategorized: 'tanpa kategori'
-  tag: 'tag'
-nav:
-  next: 'Berikutnya'
-  prev: 'Sebelumnya'
+common:
+    archive:
+        one: 'Arsip'
+        other: 'Arsip'
+    category:
+        one: 'Kategori'
+        other: 'Kategori'
+    tag:
+        one: 'tag'
+        other: 'tag'
+    post:
+        one: 'pos'
+        other: 'pos'
+    prev: 'Sebelumnya'
+    next: 'Berikutnya'
 widget:
-  recents: 'terbaru'
-  archives: 'arsip'
-  categories: 'kategori'
-  links: 'tautan'
-  tags: 'tag'
-  tag_cloud: 'awan tag'
+    follow: 'IKUTI'
+    recents: 'Terbaru'
+    links: 'tautan'
+    tag_cloud: 'awan tag'
+    catalogue: 'Catalogue'
 article:
-  comments: 'Komentar'
-  share: 'Bagikan'
-profile:
-  follow: 'IKUTI'
-  post: 'pos'
-  tag: 'tag'
-  posts: 'pos'
-  tags: 'tag'
+    more: 'Read More'
+    comments: 'Komentar'
+    read: 'read'
+    about: 'About'
+    words: 'words'
+search:
+    search: 'Search'
+    hint: 'Tulis Sesuatu..'
+insight:
+    hint: 'Tulis Sesuatu..'
+    posts: 'Pos'
+    pages: 'Halaman'
+    categories: 'Kategori'
+    tags: 'Tag'
+    untitled: 'Tanpa Judul'
