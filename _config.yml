@@ -79,5 +79,5 @@ theme: icarus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/yutiya/yutiya.github.io.git
+  repo: https://github.com/yutiya/yutiya.github.io.git
   branch: master
