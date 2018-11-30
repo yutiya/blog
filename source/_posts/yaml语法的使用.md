@@ -5,7 +5,7 @@ categories:
 tags: yaml 
 ---
 
-##YAML语法
+## YAML语法
 
 * 缩进格式均使用空格符,兼容编辑器,而没有采用TAB
 * [官方文档](http://www.yaml.org/spec/1.2/spec.html)
